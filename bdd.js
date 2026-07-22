@@ -13,7 +13,7 @@ async function buscarProdutosDoBanco() {
   const { data, error } = await _supabase
     .from('produtos')
     .select('*')
-    .eq('loja_id', 'loja-2');
+    .eq('loja_id', 'loja-3');
 
   if (error) {
     console.error('Erro ao conectar com o Supabase:', error.message);

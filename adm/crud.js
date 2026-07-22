@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const { data: produtos, error } = await _supabase
         .from('produtos')
         .select('*')
-        .eq('loja_id', 'loja-2');
+        .eq('loja_id', 'loja-3');
 
       if (error) throw error;
 
