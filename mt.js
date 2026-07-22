@@ -17,7 +17,7 @@ async function carregarProdutosDoSupabase() {
     const { data, error } = await _supabase
       .from('produtos')
       .select('*')
-      .eq('loja_id', '2ae50935-01fa-4c25-bd3c-f60b045fbc07');
+      .eq('loja_id', 'loja-2');
 
     if (error) throw error;
 
